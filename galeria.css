@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #264653;
+    color: #faf9f6;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: #e63946;
+    margin: 20px 0;
+}
+.gEstructura {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);      /* Tres imágenes por fila */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+.gItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.gItem:hover {
+    transform: scale(1.05);
+}
+.gItem .overlay {                               /*Overlay nos proporciona el efecto deu que al pasar el mouse por la imagen esta se oscurece un poco*/
+    position: absolute;                         /*y nos muestre la descripcion de la imagen que estemos seleccionando*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gItem:hover .overlay {
+    opacity: 1;
+}
+.overlay h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#des {                          /*Centrado de la descriocion de la galeria*/
+    text-align: center;
+}

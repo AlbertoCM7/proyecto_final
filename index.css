@@ -1,0 +1,65 @@
+
+body{
+    background: #264653;
+}
+header{                             /*Configuración estetica para el encabezado de la página*/
+    width: 100%;
+    height: 100px;
+    background: #264653;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+div{                                /*Configuracion para el cuerpo de la página, dónde se ñe da tamaño y color*/
+    width: 100%;
+    height: 730px;
+    background: #2A9D8F;
+}
+footer{                             /*Configuración del pié de la página*/
+    height: 100px;
+    width: 100%;                    
+    background: #264653;
+    text-align: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;   /*Modifica el estilo de la letra*/
+    color: #FAF9F6;                               /*Modifica el color de la letra*/
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FAF9F6;
+    font-size: 21px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #FAF9F6;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;                                /*Modifica el tamaño de la fuente*/
+    display: inline-block;
+    color: #FAF9F6;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #E63946;
+}
+p, li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FAF9F6;
+}
+ul{
+    color: #FAF9F6;
+}
+#img{                                   /*Dimensiones usadas para la imágen*/
+    background: fixed;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: -1587px;
+    top: 0px;
+}
